@@ -1,28 +1,28 @@
 # Welltory-Challenge
-1. Для начала нужно скопировать репозиторий с github
-    git clone https://github.com/Alikhan0707/Welltory-Challenge
-2. Зайти в папку Welltory-Challenge и создать файл .env
-    cd Welltory-Challenge
-    vim .env
+1. Для начала нужно скопировать репозиторий с github  
+    git clone https://github.com/Alikhan0707/Welltory-Challenge  
+2. Зайти в папку Welltory-Challenge и создать файл .env  
+    cd Welltory-Challenge  
+    vim .env  
     
-    и вставить данные переменного окружения:
-    DATABASE_NAME = 'welltory_app_test'
-    USERNAME = 'postgres'
-    PASSWORD = '123456'
-    HOST = 'db'
-    PORT = 5432
-3. Далее набрать в командной строке:
-    docker-compose up
+    и вставить данные переменного окружения:  
+    DATABASE_NAME = 'welltory_app_test'  
+    USERNAME = 'postgres'  
+    PASSWORD = '123456'  
+    HOST = 'db'  
+    PORT = 5432  
+3. Далее набрать в командной строке:  
+    docker-compose up  
     
-4. Создать хотябы одного юзера:
-    http://0.0.0.0:8000/users
-    метод: POST
-    Json body: 
-    { "username": "exampleUser", "email": "example@example.com", "password": "123" }
-5. Отправить данные для расчета:
-    http://0.0.0.0:8000/calculate
-    метод: POST
-    Json body:
+4. Создать хотябы одного юзера:  
+    http://0.0.0.0:8000/users  
+    метод: POST  
+    Json body:  
+    { "username": "exampleUser", "email": "example@example.com", "password": "123" }  
+5. Отправить данные для расчета:  
+    http://0.0.0.0:8000/calculate  
+    метод: POST  
+    Json body:  
 {
   "user_id": 1,
   "data": {
